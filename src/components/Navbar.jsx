@@ -10,7 +10,7 @@ const Navbar = () => {
                 <li className="text-xl font-semibold" key={item.label}>
                     <a 
                     href={item.href}
-                    className="text-white hover-line"
+                    className="text-white text-sm"
                     >
                         {item.label}
                     </a>
