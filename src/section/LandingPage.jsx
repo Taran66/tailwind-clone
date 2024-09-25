@@ -1,6 +1,5 @@
 import Navbar from "../components/Navbar"
 
-
 const LandingPage = () => {
   return (
     <div>
@@ -18,7 +17,7 @@ const LandingPage = () => {
       </div>
       <div className="mt-20">
           <div className="flex flex-row items-center">
-            <div className="">
+            <div className="z-10 -mr-[20px]">
             <img src="../src/assets/landing-img1.png" alt="#" />
             </div>
             <div>
