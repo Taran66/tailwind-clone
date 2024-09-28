@@ -1,3 +1,4 @@
+import Features from "./Features"
 import LandingPage from "./LandingPage"
 import Review from "./Review"
 
@@ -7,6 +8,7 @@ const DropPage = () => {
     <div>
         <LandingPage />
         <Review />
+        <Features />
     </div>
   )
 }
