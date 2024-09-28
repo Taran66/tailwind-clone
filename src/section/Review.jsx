@@ -27,12 +27,12 @@ const Review = () => {
           <ul key={columnIndex} className="flex flex-col gap-10 items-center">
             {testimonials.map((item, index) => (
               <li key={index} className="text-white w-96">
-                <div className="flex flex-col gap-10 bg-gray-600 p-4 rounded-lg">
+                <div className="flex flex-col gap-10 bg-slate-800 p-4 rounded-lg">
                   <div className="flex flex-row gap-10 items-center">
                     <CgProfile size={40} />
                     <div className="flex flex-col gap-2">
                       <h6 className="font-bold">{item.name}</h6>
-                      <p className="text-sm">{item.enterprise}</p>
+                      <p className="text-sm text-gray-300">{item.enterprise}</p>
                     </div>
                   </div>
                   <div>{item.quote}</div>
@@ -43,12 +43,15 @@ const Review = () => {
         ))}
       </div>
       <div className="flex justify-center mt-4">
+        <div className="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-white pt-32 pb-8  dark:from-slate-900 sticky -mt-52 transition-opacity duration-300 opacity-100 w-full"> 
         <button 
-          className="bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+          className="bg-slate-700 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded transition duration-300"
           onClick={toggleShowAll}
         >
-          {showAll ? 'Show Less' : 'Show More'}
+          {showAll ? 'Okay, I get the point' : 'Show More'}
         </button>
+        </div>
+        
       </div>
     </div>
   );

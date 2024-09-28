@@ -73,32 +73,32 @@ export const testimonials = [
     },
     {
       name: "Praveen Kumar",
-      enterprise: "",
+      enterprise: "Front-End Developer",
       quote: "I use @tailwindcss for every single project because it removes most of the annoyances of css and is multiple times quicker."
     },
     {
       name: "Vasu Bansal",
-      enterprise: "",
+      enterprise: "Front-End Developer",
       quote: "It's changed the trajectory of my business. I'm able to design better looking, better performing, and more accessible components in 1/3 of the time."
     },
     {
       name: "Dennis Walsh",
-      enterprise: "",
+      enterprise: "Front-End Developer",
       quote: "My first tailwind project worked great but what really kicked ass was going back to it months later and saving so much time making new changes. I knew how everything fit together instantly."
     },
     {
       name: "Eric L. Barnes",
-      enterprise: "",
+      enterprise: "Front-End Developer",
       quote: "Tailwind looked like pure spaghetti until I used it in a real project. Now it's the only way I make websites. Simple, fast, scalable."
     },
     {
       name: "Nick Saraev",
-      enterprise: "",
+      enterprise: "Front-End Developer",
       quote: "Tailwind is a classic example of why you need to put preconceptions aside when evaluating tech. The experience and productivity is streets ahead of what you might have believed based on old school CSS thinking!"
     },
     {
       name: "Luke Bennett",
-      enterprise: "",
+      enterprise: "Front-End Developer",
       quote: "Tailwind CSS is a framework like no other. Rather than constraining you to a set design, it gives you the tools and the standardization to build exactly what you want."
     }
   ];
