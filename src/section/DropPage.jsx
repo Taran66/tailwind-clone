@@ -1,15 +1,13 @@
-import ButtonGroup from "./ButtonGroup"
-
 import LandingPage from "./LandingPage"
 import Review from "./Review"
-
+import Features from "./Features"
 
 const DropPage = () => {
   return (
     <div>
         <LandingPage />
         <Review />
-        <ButtonGroup />
+        <Features />
     </div>
   )
 }

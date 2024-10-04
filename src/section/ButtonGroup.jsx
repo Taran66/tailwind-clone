@@ -23,14 +23,14 @@ const ButtonGroup = () => {
         <button
           key={button.id}
           onClick={() => handleButtonClick(button.id)}
-          className={`group ${
+          className={`group flex flex-col items-center ${
             activeButton === button.id
               ? "text-sm font-semibold text-indigo-600 dark:text-indigo-400"
-              : ""
+              : "text-sm font-semibold"
           }`}
         >
           <button.svg
-            className={`mb-6 ${
+            className={`mb-6 flex ${
               activeButton !== button.id
                 ? "text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500"
                 : ""
