@@ -1,4 +1,5 @@
-import Features from "./Features"
+import ButtonGroup from "./ButtonGroup"
+
 import LandingPage from "./LandingPage"
 import Review from "./Review"
 
@@ -8,7 +9,7 @@ const DropPage = () => {
     <div>
         <LandingPage />
         <Review />
-        <Features />
+        <ButtonGroup />
     </div>
   )
 }
