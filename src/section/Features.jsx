@@ -1,6 +1,3 @@
-import CodeBlock from "../components/CodeBlock";
-import ButtonGroup from "./ButtonGroup";
-import DisplayComponent from "./DisplayComponent";
 import ParentComponent from "./ParentComponent";
 
 const Features = () => {
@@ -18,7 +15,6 @@ const Features = () => {
             <button className="px-5 py-2 bg-slate-700 hover:bg-slate-600 text-slate-100 rounded-full">Learn more</button>
             
             <ParentComponent />
-            <CodeBlock />
         </div>
 
     </div>

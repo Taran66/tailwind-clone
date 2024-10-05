@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ButtonGroup from './ButtonGroup';
+import CodeBlock from './CodeBlock';
 import DisplayComponent from './DisplayComponent'; // The component where we send the buttonId
+
 
 const ParentComponent = () => {
   // State to track the active button in the parent component
@@ -17,6 +19,7 @@ const ParentComponent = () => {
       <ButtonGroup onButtonClick={handleButtonClick} />
       {/* Pass the activeButtonId to DisplayComponent */}
       <DisplayComponent activeButtonId={activeButtonId} />
+      <CodeBlock activeButtonId = {activeButtonId}/>
     </div>
   );
 };
