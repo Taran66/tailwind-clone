@@ -8,6 +8,7 @@ const DropPage = () => {
         <LandingPage />
         <Review />
         <Features />
+        
     </div>
   )
 }

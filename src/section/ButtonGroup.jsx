@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 
-const ButtonGroup = () => {
-  // State to track the ID of the currently clicked button
+const ButtonGroup = ({ onButtonClick }) => {
   const [activeButton, setActiveButton] = useState(null);
 
-  // Handle button click
   const handleButtonClick = (id) => {
-    setActiveButton(id); // Set the clicked button as the active one
+    setActiveButton(id);
+    onButtonClick(id); // Call the parent handler and pass the button id
   };
 
-  // List of buttons with their unique ids
   const buttons = [
     { id: 1, label: "Sizing", svg: SizingSvg },
     { id: 2, label: "Colors", svg: ColorsSvg },
@@ -42,6 +40,10 @@ const ButtonGroup = () => {
     </div>
   );
 };
+
+// SVG components go here (same as before)
+
+
 
 // SVG components (use the SVGs you provided)
 const SizingSvg = ({ className }) => (
