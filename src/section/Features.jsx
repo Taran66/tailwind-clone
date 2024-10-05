@@ -1,12 +1,7 @@
-import { useState } from "react"
 import ButtonGroup from "./ButtonGroup";
 
 const Features = () => {
-  const [isClicked, setIsClicked] = useState(false);
 
-  const handleButtonClick = () => {
-    setIsClicked((prev) => !prev)
-  }
   return (
     <div className=" mx-80 mt-36">
         <div className="flex flex-col items-start gap-8 w-8/12">
