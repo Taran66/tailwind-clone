@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const ButtonGroup = ({ onButtonClick }) => {
-  const [activeButton, setActiveButton] = useState(null);
+  const [activeButton, setActiveButton] = useState(1);
 
   const handleButtonClick = (id) => {
     setActiveButton(id);

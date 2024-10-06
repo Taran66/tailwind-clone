@@ -2,6 +2,9 @@
 import React, { useEffect } from "react";
 import Prism from "prismjs"; // Import Prism for syntax highlighting
 import "prismjs/themes/prism-tomorrow.css"; // Import Prism theme
+import 'prismjs/plugins/line-numbers/prism-line-numbers';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+
 
 const CodeBlock = ({ activeButtonId }) => {
   const featureCode = [
@@ -153,20 +156,21 @@ const CodeBlock = ({ activeButtonId }) => {
   }, [selectedFeature]);
 
   return (
-    <div className="bg-gray-900 p-4 rounded-md shadow-md mt-8">
+  <div className="mt-8 h-96 overflow-auto ">
       {selectedFeature ? (
-        <pre className="language-html">
-          <code className="language-html">{selectedFeature.code.trim()}</code>
+        <pre className="language-javascript line-numbers">
+          <code className="language-javascript">{selectedFeature.code.trim()}</code>
         </pre>
       ) : (
         
-        <pre className="language-html">
-          <code className="language-html">
+        <pre className="language-javascript line-numbers">
+          <code className="language-javascript">
             {featureCode[0].code.trim()}
           </code>
         </pre>
       )}
     </div>
+    
   );
 };
 
