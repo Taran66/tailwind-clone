@@ -1,7 +1,7 @@
 // CodeBlock.jsx
 import React, { useEffect } from "react";
-import Prism from "prismjs"; // Import Prism for syntax highlighting
-import "prismjs/themes/prism-tomorrow.css"; // Import Prism theme
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css";
 import 'prismjs/plugins/line-numbers/prism-line-numbers';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import parse from 'html-react-parser';
@@ -145,16 +145,6 @@ const CodeBlock = ({ activeButtonId }) => {
     },
   ];
 
-  // Find the code that matches the activeButtonId
-  // const selectedFeature = featureCode.find(
-  //   (feature) => feature.id === activeButtonId
-  // );
-
-  // useEffect(() => {
-  //   // Highlight all code blocks after rendering
-  //   Prism.highlightAll();
-  // }, [selectedFeature]);
-
   const selectedFeature = featureCode.find(
     (feature) => feature.id === activeButtonId
   ) || featureCode[0];
@@ -165,12 +155,11 @@ const CodeBlock = ({ activeButtonId }) => {
 
   return (
   
-  <div>
-    <div className="mt-8 h-96 w-[500px] overflow-auto ">
+  <div className="flex flex-row ">
+    <div className="mt-8  w-[500px] overflow-auto">
       {selectedFeature ? (
         <pre className="language-javascript line-numbers">
           <code className="language-javascript">{selectedFeature.code.trim()}</code>
-          
         </pre>
         
       ) : (
@@ -178,12 +167,13 @@ const CodeBlock = ({ activeButtonId }) => {
           <code className="language-javascript">
             {featureCode[0].code.trim()}
           </code>
-          
         </pre>
       )}
       
     </div>
-    {parse(selectedFeature.code)}
+    <div className="w-full h-full">
+      {parse(selectedFeature.code)}
+    </div>
   </div>
     
   );
